@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image Modifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>EXIF data viewer</title>
 </head>
 <body>
-    <h1>Upload an Image</h1>
+    <h1>Upload an Image</h1> <br>
     <form method="POST" action="/upload" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
-        <button type="submit">Upload & Modify</button>
+        <input type="file" name="image" accept="image/*" required> <br>
+        <button type="submit">Show Image EXIF Data</button>
     </form>
 </body>
 </html>
