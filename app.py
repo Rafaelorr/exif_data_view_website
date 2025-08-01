@@ -37,5 +37,9 @@ def upload():
 
     return render_template("result.html", exif=exif_data)
 
+@app.route("/docs")
+def documentation():
+    return render_template("exif_tags.html")
+
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0")
