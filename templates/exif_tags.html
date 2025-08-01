@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EXIF Tags Explanation</title>
+  <link rel="stylesheet" href="/static/exif_tags.css">
+</head>
+<body>
+
+  <h1>Detailed Explanation of Common EXIF Tags</h1>
+  <p>EXIF (Exchangeable Image File Format) data is embedded in image files (mostly JPEG, TIFF, and RAW) by digital cameras, smartphones, and image editing tools. These tags provide metadata that describe how and when the image was captured. Below are the most commonly used EXIF tags explained in detail.</p>
+
+  <section class="tag-section">
+    <span class="tag-name">1. DateTimeOriginal</span>
+    <p><strong>Description:</strong> The date and time when the photo was originally taken (not when it was last modified).</p>
+    <p><strong>Format:</strong> YYYY:MM:DD HH:MM:SS (e.g., <code>2025:07:15 14:25:36</code>)</p>
+    <p><strong>Importance:</strong> Useful for sorting photos chronologically, digital forensics, or organizing libraries.</p>
+    <p><strong>Notes:</strong> This value can be incorrect if the camera’s date and time were not set correctly.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">2. Make</span>
+    <p><strong>Description:</strong> The manufacturer of the camera or device that took the photo.</p>
+    <p><strong>Example:</strong> <code>Canon</code>, <code>Nikon</code>, <code>Apple</code>, <code>Samsung</code></p>
+    <p><strong>Importance:</strong> Helps identify the hardware used and often used in reverse image searches or authenticity checks.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">3. Model</span>
+    <p><strong>Description:</strong> The specific model of the camera or smartphone used.</p>
+    <p><strong>Example:</strong> <code>iPhone 13 Pro</code>, <code>Canon EOS 5D Mark IV</code></p>
+    <p><strong>Importance:</strong> Paired with the "Make" tag, this gives a full profile of the capture device.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">4. ExposureTime</span>
+    <p><strong>Description:</strong> The duration of the camera’s exposure, usually shown as a fraction of a second.</p>
+    <p><strong>Example:</strong> <code>1/500</code> (fast shutter), <code>1/4</code> (slow shutter)</p>
+    <p><strong>Use Cases:</strong> Helps determine motion blur, freezing action, or light trails. Longer exposures let in more light but may cause blur if handheld.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">5. FNumber</span>
+    <p><strong>Description:</strong> Represents the aperture setting of the lens when the image was taken.</p>
+    <p><strong>Example:</strong> <code>f/1.8</code> (wide open), <code>f/11</code> (narrow aperture)</p>
+    <p><strong>Effect:</strong> Lower f-numbers allow more light and create shallow depth of field (blurred background). Higher f-numbers increase sharpness across the frame.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">6. ISOSpeedRatings</span>
+    <p><strong>Description:</strong> The sensitivity of the camera’s sensor to light.</p>
+    <p><strong>Example:</strong> <code>ISO 100</code> (low noise), <code>ISO 3200</code> (brighter in dark, but noisy)</p>
+    <p><strong>Use:</strong> Crucial in low-light situations. Higher ISO can help freeze motion in dark scenes but adds grain.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">7. FocalLength</span>
+    <p><strong>Description:</strong> The distance between the lens and the image sensor, typically expressed in millimeters (mm).</p>
+    <p><strong>Example:</strong> <code>50mm</code> (standard), <code>200mm</code> (telephoto)</p>
+    <p><strong>Use:</strong> Helps determine the field of view. Lower = wider angle. Higher = more zoomed in.</p>
+    <p><strong>Note:</strong> For crop sensor cameras, the effective focal length may differ due to crop factor.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">8. GPSLatitude & GPSLongitude</span>
+    <p><strong>Description:</strong> GPS coordinates of where the image was taken.</p>
+    <p><strong>Format:</strong> Decimal or DMS (degrees, minutes, seconds)</p>
+    <p><strong>Example:</strong> <code>37.7749° N, 122.4194° W</code> (San Francisco)</p>
+    <p><strong>Privacy Note:</strong> Location data can be sensitive; often stripped by social media platforms.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">9. Orientation</span>
+    <p><strong>Description:</strong> The orientation of the camera relative to the scene. Tells devices how to rotate the image for correct display.</p>
+    <p><strong>Values:</strong> Horizontal (normal), Rotate 90 CW, Rotate 180, etc.</p>
+    <p><strong>Use:</strong> If the camera was held sideways or upside down, this tag helps adjust the viewing direction.</p>
+  </section>
+
+  <section class="tag-section">
+    <span class="tag-name">10. WhiteBalance</span>
+    <p><strong>Description:</strong> Indicates the white balance setting used (e.g., auto, manual).</p>
+    <p><strong>Values:</strong> <code>0</code> = Auto, <code>1</code> = Manual</p>
+    <p><strong>Effect:</strong> Affects color temperature. Auto mode adjusts to lighting conditions, while manual is fixed.</p>
+  </section>
+
+  <section>
+    <h2>Final Notes</h2>
+    <ul>
+      <li>EXIF data can be edited or stripped using software like Photoshop, Lightroom, or command-line tools.</li>
+      <li>Some websites (e.g., Facebook, Instagram) remove EXIF data to protect privacy and save space.</li>
+      <li>Photographers often use EXIF data for learning, troubleshooting, or replicating settings.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
