@@ -20,14 +20,14 @@ h1 {
 }
 
 /* EXIF List */
-ul {
+.ul_documentation {
     list-style-type: none;
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
 }
 
-li {
+.li_documentation {
     background-color: #1e1e1e;
     padding: 1em;
     margin-bottom: 0.5em;
@@ -36,7 +36,7 @@ li {
     word-break: break-word;
 }
 
-li strong {
+.li_documentation strong {
     color: #ffffff;
 }
 
