@@ -1,7 +1,5 @@
-from flask import Flask, request, render_template, send_file
-from PIL import Image
+from flask import Flask, request, render_template
 import os
-from io import BytesIO
 from functions import *
 import tempfile
 
