@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Dark Mode Background and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 2em;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+  
+h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+  
+p {
+    margin: 0.5em 0;
+}
+  
+ul {
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+}
+  
+li {
+    margin-bottom: 0.5em;
+}
+  
+/* Inline Code Tags */
+code {
+    background-color: #2a2a2a;
+    color: #cfcfcf;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+.tag-section {
+    background-color: #1e1e1e;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 1.8em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.tag-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #66b0ff;
+    display: block;
+    margin-bottom: 0.5em;
+}
+  
+@media (max-width: 600px) {
+    body {
+      padding: 1em;
+    }
+  
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+}

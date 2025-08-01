@@ -1,7 +1,5 @@
-from flask import Flask, request, render_template, send_file
-from PIL import Image
+from flask import Flask, request, render_template
 import os
-from io import BytesIO
 from functions import *
 import tempfile
 
@@ -36,6 +34,10 @@ def upload():
     os.remove(tmp_path)
 
     return render_template("result.html", exif=exif_data)
+
+@app.route("/docs")
+def documentation():
+    return render_template("exif_tags.html")
 
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0")
