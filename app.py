@@ -26,8 +26,11 @@ def upload():
     exif_data = read_exif_data(tmp_path)
 
     # make GPS data human readable
-    lat, lon = extract_gps_location(exif_data["GPSInfo"])
-    exif_data["GPSInfo"] = {"lat":lat, "lon":lon}
+    try:
+        lat, lon = extract_gps_location(exif_data["GPSInfo"])
+        exif_data["GPSInfo"] = {"lat":lat, "lon":lon}
+    except TypeError:
+        pass
 
     # Clean up the temporary file
     os.remove(tmp_path)
