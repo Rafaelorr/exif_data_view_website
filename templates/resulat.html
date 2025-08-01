@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image EXIF Data</title>
+</head>
+<body>
+    <h1>EXIF Data</h1>
+    {% if exif %}
+        <ul>
+        {% for key, value in exif.items() %}
+            <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No EXIF data found.</p>
+    {% endif %}
+</body>
+</html>
