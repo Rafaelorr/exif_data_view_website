@@ -35,8 +35,7 @@ def upload():
     # Clean up the temporary file
     os.remove(tmp_path)
 
-    # Render the EXIF data (adjust resulat.html accordingly)
-    return render_template("resulat.html", exif=exif_data)
+    return render_template("result.html", exif=exif_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0")
