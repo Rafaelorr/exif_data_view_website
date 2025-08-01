@@ -7,11 +7,13 @@
     <title>EXIF Data</title>
 </head>
 <body>
+    {% include "navbar.html" %}
+
     <h1>EXIF Data</h1>
     {% if exif %}
-        <ul>
+        <ul class="ul_documentation">
         {% for key, value in exif.items() %}
-            <li><strong>{{ key }}:</strong> {{ value }}</li>
+            <li class="li_documentation"><strong>{{ key }}:</strong> {{ value }}</li>
         {% endfor %}
         </ul>
     {% else %}
