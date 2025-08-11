@@ -84,6 +84,158 @@
     <p><strong>Effect:</strong> Affects color temperature. Auto mode adjusts to lighting conditions, while manual is fixed.</p>
   </section>
 
+  <section class="tag-section">
+    <span class="tag-name">11. Manufacturer</span>
+    <p><strong>Description:</strong> Another name for the <code>Make</code> tag. It refers to the camera or device manufacturer.</p>
+    <p><strong>Example:</strong> <code>Nikon</code>, <code>Apple</code>, <code>Sony</code></p>
+    <p><strong>Importance:</strong> Identifies the brand of the capturing device, useful for analysis or cataloging.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">12. Software</span>
+    <p><strong>Description:</strong> The name and version of the software used to process the image (e.g., photo editor).</p>
+    <p><strong>Example:</strong> <code>Adobe Photoshop 25.0</code>, <code>Lightroom Classic</code></p>
+    <p><strong>Use:</strong> Helps track post-processing or identify if an image has been modified.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">13. DateTime</span>
+    <p><strong>Description:</strong> The last modified date and time of the image file.</p>
+    <p><strong>Format:</strong> YYYY:MM:DD HH:MM:SS</p>
+    <p><strong>Note:</strong> This is different from the original capture time; it updates if the image is edited.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">14. YCbCrPositioning</span>
+    <p><strong>Description:</strong> Specifies the chroma subsampling positioning relative to the luma channel.</p>
+    <p><strong>Values:</strong> <code>1</code> = Centered, <code>2</code> = Co-sited</p>
+    <p><strong>Use:</strong> Technical detail used in color processing and compression schemes.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">15. Compression</span>
+    <p><strong>Description:</strong> Indicates the compression method used on the image.</p>
+    <p><strong>Common Value:</strong> <code>6</code> = JPEG compression</p>
+    <p><strong>Use:</strong> Determines how image data is stored. Useful for format compatibility and quality evaluation.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">16. XResolution & YResolution</span>
+    <p><strong>Description:</strong> The number of pixels per unit (usually inch) in the X (horizontal) and Y (vertical) directions.</p>
+    <p><strong>Example:</strong> <code>72 dpi</code>, <code>300 dpi</code></p>
+    <p><strong>Use:</strong> Affects print size and quality. Does not impact digital display resolution.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">17. ResolutionUnit</span>
+    <p><strong>Description:</strong> Defines the unit for X and Y resolution.</p>
+    <p><strong>Values:</strong> <code>2</code> = Inches, <code>3</code> = Centimeters</p>
+    <p><strong>Use:</strong> Pairs with X/Y resolution for defining pixel density.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">18. ExposureProgram</span>
+    <p><strong>Description:</strong> Indicates the camera's exposure mode at capture.</p>
+    <p><strong>Examples:</strong> <code>1</code> = Manual, <code>2</code> = Program AE, <code>3</code> = Aperture priority, <code>4</code> = Shutter priority</p>
+    <p><strong>Use:</strong> Helps interpret whether the photographer or camera controlled the exposure.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">19. ExifVersion</span>
+    <p><strong>Description:</strong> Indicates the version of the EXIF standard used.</p>
+    <p><strong>Format:</strong> 4-byte string (e.g., <code>0231</code> for version 2.31)</p>
+    <p><strong>Use:</strong> Software may use this to determine compatibility with EXIF features.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">20. DateTimeDigitized</span>
+    <p><strong>Description:</strong> When the image was converted to digital form.</p>
+    <p><strong>Use:</strong> May differ from capture time in scanned or processed images.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">21. ComponentsConfiguration</span>
+    <p><strong>Description:</strong> Order of RGB (or YCbCr) components in the image data.</p>
+    <p><strong>Values:</strong> E.g., <code>1 2 3 0</code> means YCbCr (Y, Cb, Cr)</p>
+    <p><strong>Use:</strong> Important for correctly decoding image color.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">22. CompressedBitsPerPixel</span>
+    <p><strong>Description:</strong> Average number of bits per pixel after compression.</p>
+    <p><strong>Use:</strong> Indicates image quality and compression efficiency.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">23. ExposureBias</span>
+    <p><strong>Description:</strong> The exposure compensation set by the photographer.</p>
+    <p><strong>Example:</strong> <code>+1 EV</code> (brighter), <code>-1 EV</code> (darker)</p>
+    <p><strong>Use:</strong> Adjusts exposure without changing shutter/aperture/ISO directly.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">24. MaxApertureValue</span>
+    <p><strong>Description:</strong> The maximum aperture (lowest f-number) of the lens at the time of capture.</p>
+    <p><strong>Example:</strong> <code>f/2.8</code></p>
+    <p><strong>Use:</strong> Indicates lens capability, helps in depth-of-field analysis.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">25. MeteringMode</span>
+    <p><strong>Description:</strong> The method the camera used to determine exposure.</p>
+    <p><strong>Examples:</strong> <code>0</code> = Unknown, <code>1</code> = Average, <code>2</code> = Center-weighted, <code>5</code> = Spot</p>
+    <p><strong>Use:</strong> Helps explain how the scene was evaluated for exposure.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">26. Flash</span>
+    <p><strong>Description:</strong> Indicates if the flash fired and how it was controlled.</p>
+    <p><strong>Values:</strong> <code>0</code> = No flash, <code>1</code> = Flash fired</p>
+    <p><strong>Use:</strong> Useful for determining lighting conditions and image origin.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">27. FlashPixVersion</span>
+    <p><strong>Description:</strong> Version of the FlashPix format used (if applicable).</p>
+    <p><strong>Value:</strong> Typically <code>0100</code></p>
+    <p><strong>Use:</strong> Indicates compatibility with FlashPix-specific metadata structures.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">28. ColorSpace</span>
+    <p><strong>Description:</strong> The color space in which the image is stored.</p>
+    <p><strong>Example:</strong> <code>1</code> = sRGB, <code>65535</code> = Uncalibrated</p>
+    <p><strong>Use:</strong> Affects color rendering on screens and in print.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">29. PixelXDimension & PixelYDimension</span>
+    <p><strong>Description:</strong> The width and height of the image in pixels.</p>
+    <p><strong>Example:</strong> <code>4032 x 3024</code></p>
+    <p><strong>Use:</strong> Determines resolution for display or printing.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">30. FileSource</span>
+    <p><strong>Description:</strong> Type of image source: digital camera, scanner, etc.</p>
+    <p><strong>Example:</strong> <code>3</code> = Digital still camera</p>
+    <p><strong>Use:</strong> Helps distinguish scanned images from originals.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">31. InteroperabilityIndex</span>
+    <p><strong>Description:</strong> Indicates whether the image follows the ExifR98 standard.</p>
+    <p><strong>Example:</strong> <code>R98</code></p>
+    <p><strong>Use:</strong> Important for backward compatibility with older EXIF readers.</p>
+  </section>
+  
+  <section class="tag-section">
+    <span class="tag-name">32. InteroperabilityVersion</span>
+    <p><strong>Description:</strong> The version of the interoperability rules being followed.</p>
+    <p><strong>Example:</strong> <code>0100</code></p>
+    <p><strong>Use:</strong> Ensures consistent interpretation across compliant software.</p>
+  </section>
+  
   <section>
     <h2>Final Notes</h2>
     <ul>
