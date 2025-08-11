@@ -23,7 +23,7 @@ def extract_gps_location(gps_info):
         return None, None
 
 def read_exif_data(image_path):
-    exclusions :tuple = ("MakerNote","UserComment","ComponentsConfiguration","ExifVersion","FlashPixVersion","FileSource","SceneType")
+    exclusions :tuple = ("MakerNote")
     try:
         image = Image.open(image_path)
         exif_data = image._getexif()
