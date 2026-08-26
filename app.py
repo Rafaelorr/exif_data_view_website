@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
 import os
-from functions import *
 import tempfile
+from flask import Flask, request, render_template
+from functions import extract_gps_location, read_exif_data
 
 app = Flask(__name__)
 
